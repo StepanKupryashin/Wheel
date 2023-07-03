@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0dc33de340704079a7f12862f98389ed" Name="Diagram1">
+        <EntityTypeShape EntityType="WheelDBModel.orders" Width="1.5" PointX="6.375" PointY="0.5" />
+        <EntityTypeShape EntityType="WheelDBModel.orders_products" Width="1.5" PointX="8.625" PointY="0.625" />
+        <EntityTypeShape EntityType="WheelDBModel.products" Width="1.5" PointX="11" PointY="1" />
+        <EntityTypeShape EntityType="WheelDBModel.sysdiagrams" Width="1.5" PointX="8.375" PointY="4.25" />
+        <AssociationConnector Association="WheelDBModel.FK_orders_products_orders" />
+        <AssociationConnector Association="WheelDBModel.FK_orders_products_products" />
+        <EntityTypeShape EntityType="WheelDBModel.users" Width="1.5" PointX="10.75" PointY="4.25" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

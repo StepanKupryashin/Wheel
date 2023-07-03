@@ -1,0 +1,27 @@
+﻿<Window x:Class="Wheel.AdminPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wheel"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Руль. АдминПанель" Height="450" Width="800">
+    <Grid>
+        <Label Content="АдминПанель" HorizontalAlignment="Left" Height="35" Margin="10,0,0,0" VerticalAlignment="Top" Width="125"/>
+        <TabControl HorizontalAlignment="Center" Height="364" VerticalAlignment="Center" Width="780">
+            <TabItem  Header="Продукты">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="productsGrid" HorizontalAlignment="Center" Height="336" VerticalAlignment="Center" Width="774"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Заказы">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="orderGrid" HorizontalAlignment="Center" Height="336" VerticalAlignment="Center" Width="774" >
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
